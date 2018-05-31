@@ -87,4 +87,9 @@ symbols_count_time:
   time: true
   total_symbols: false
   total_time: false
-  
+
+# hexo sitemap网站地图
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml

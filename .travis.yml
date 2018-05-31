@@ -20,6 +20,8 @@ before_install:
 - npm install hexo-wordcount --save
 - npm install hexo-symbols-count-time --save
 - npm install hexo-sliding-spoiler --save
+- npm install hexo-generator-sitemap --save
+- npm install hexo-generator-baidu-sitemap --save
 
  
 script:
