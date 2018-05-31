@@ -522,7 +522,7 @@ valine:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 gitment:
-  enable: true
+  enable: false
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
@@ -536,13 +536,13 @@ gitment:
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
 # Gitalk
-gitalk: 
-  enable: true    #用来做启用判断可以不用
-  clientID: 7ef39e621b3f07800f38    #上面生成的往这里怼
-  clientSecret: eaddcd3aa19fe6b52262ff7850bde06e7f09971f   #同上
-  repo: fydy.github.io    #仓库名称
-  owner: fydy    #github用户名
-  admin: fydy
+gitalk:
+  enable: true
+  githubID: fydy 
+  repo: fydy.github.io
+  ClientID: 7ef39e621b3f07800f38
+  ClientSecret: eaddcd3aa19fe6b52262ff7850bde06e7f09971f
+  adminUser: fydy
   distractionFreeMode: true
   
 # Baidu Share
