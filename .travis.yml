@@ -24,7 +24,7 @@ before_install:
 - npm i -S deasync mathjax-node-page jsdom@9
 - npm install hexo-neat --save
 - npm install gulp -g
-- npm install gulp gulp-minify-css gulp-htmlmin gulp-htmlclean --save
+- npm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp --save
  
 script:
 - hexo clean
