@@ -87,3 +87,10 @@ symbols_count_time:
   time: true
   total_symbols: false
   total_time: false
+
+# hexo-slides-reveal
+slide:
+    dir: slides
+    separator: ^\n---\n$
+    separator_vertical: ^\n--\n$
+    charset: utf-8
