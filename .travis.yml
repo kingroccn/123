@@ -28,7 +28,7 @@ before_install:
  
 script:
 - hexo clean
-- hexo g
+- hexo g && gulp
 after_success:
 - cd ./public
 - git init
