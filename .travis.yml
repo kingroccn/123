@@ -19,6 +19,7 @@ before_install:
 - npm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp --save
 - npm install hexo-wordcount --save
 - npm install hexo-symbols-count-time --save
+- npm install hexo-sliding-spoiler --save
 
  
 script:
