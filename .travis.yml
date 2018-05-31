@@ -22,6 +22,7 @@ before_install:
 - npm install hexo-sliding-spoiler --save
 - npm install hexo-generator-sitemap --save
 - npm install hexo-generator-baidu-sitemap --save
+- npm install hexo-service-worker hexo-filter-optimize --save
 
  
 script:
