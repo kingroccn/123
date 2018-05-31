@@ -23,6 +23,8 @@ before_install:
 - npm install hexo-service-worker hexo-filter-optimize --save
 - npm i -S deasync mathjax-node-page jsdom@9
 - npm install hexo-neat --save
+- npm install gulp -g
+- npm install gulp gulp-minify-css gulp-htmlmin gulp-htmlclean --save
  
 script:
 - hexo clean
