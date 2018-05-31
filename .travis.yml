@@ -15,10 +15,15 @@ before_install:
 - git config --global user.email "edu@yuns.me"
 - npm install hexo-cli -g
 - npm install --save gitalk
+- npm install gulp -g
+- npm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp --save
+- npm install hexo-wordcount --save
+- npm install hexo-symbols-count-time --save
+
  
 script:
 - hexo clean
-- hexo g
+- hexo g && gulp
 after_success:
 - cd ./public
 - git init
