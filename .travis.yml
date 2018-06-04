@@ -38,4 +38,9 @@ after_success:
 - git push --quiet --force https://$hexo@github.com/fydy/fydy.github.io.git
   master
 # Coding Pages
-- git push --force --quiet https://$code@git.coding.net/deweke/deweke.coding.me.git master
+- git push --force --quiet "https://deweke:${CO_TOKEN}@${CO_REF}" master:master
+
+env:
+ global:
+   # Coding Pages
+   - CO_REF: https://git.coding.net/deweke/deweke.coding.me.git
