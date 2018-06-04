@@ -38,7 +38,7 @@ after_success:
 - git push --quiet --force https://$hexo@github.com/fydy/fydy.github.io.git
   master
 # Coding Pages
-- git push --force --quiet "https://deweke:${CO_TOKEN}@${CO_REF}" master:master
+- git push --force --quiet "https://deweke:${CO_Token}@${CO_REF}" master:master
 
 branches:
   only:
