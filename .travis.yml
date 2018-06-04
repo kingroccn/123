@@ -43,4 +43,4 @@ after_success:
 env:
  global:
    # Coding Pages
-   - CO_REF: https://git.coding.net/deweke/deweke.coding.me.git
+   - CO_REF: git.coding.net/deweke/deweke.coding.me.git
