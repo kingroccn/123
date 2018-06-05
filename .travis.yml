@@ -34,8 +34,6 @@ after_success:
   master
 # Coding Pages
 - git push --force --quiet "https://deweke:${CO_TOKEN}@${CO_REF}" master:master
-# Gitee Pages
-- git push --force --quiet https://yunio:$CO_TOKEN@gitee.com/yunio/hexo.gitee.io.git master
 
 env:
  global:
