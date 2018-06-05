@@ -7,29 +7,35 @@ branches:
   only:
   - source
 
-directories:
-  - node_modules
+cache:
+  apt: true
+  yarn: true
+  directories:
+    - node_modules
+    
 # tarvis生命周期执行顺序详见官网文档
 before_install:
+- curl -o- -L https://yarnpkg.com/install.sh | bash
+- export PATH=$HOME/.yarn/bin:$PATH
 - git config --global user.name "fydy"
 - git config --global user.email "edu@yuns.me"
-- npm install hexo-cli gulp -g
-- npm i -S deasync mathjax-node-page jsdom@9
-- npm install hexo-generator-sitemap hexo-generator-baidu-sitemap hexo-sliding-spoiler hexo-symbols-count-time hexo-wordcount gitalk gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp hexo-neat hexo-service-worker hexo-filter-optimize --save
- 
+- yarn add hexo-cli deasync mathjax-node-page hexo-generator-sitemap hexo-generator-baidu-sitemap hexo-sliding-spoiler hexo-symbols-count-time hexo-wordcount gitalk gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp hexo-neat hexo-service-worker hexo-filter-optimize --save
+
 script:
 - hexo clean
-- hexo g && gulp
+- hexo g
 after_success:
 - cd ./public
 - git init
 - git add --all .
-- git commit -m "Travis CI Auto Builder"
+- git commit -m "yunxi"
 # 这里的 REPO_TOKEN 即之前在 travis 项目的环境变量里添加的
 - git push --quiet --force https://$hexo@github.com/fydy/fydy.github.io.git
   master
 # Coding Pages
 - git push --force --quiet "https://deweke:${CO_TOKEN}@${CO_REF}" master:master
+# Gitee Pages
+- git push --force --quiet https://yunio:$CO_TOKEN@gitee.com/yunio/hexo.gitee.io.git master
 
 env:
  global:
