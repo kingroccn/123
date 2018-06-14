@@ -30,12 +30,14 @@ after_success:
 - git add --all .
 - git commit -m "yunxi"
 # 这里的 REPO_TOKEN 即之前在 travis 项目的环境变量里添加的
-- git push --quiet --force https://$hexo@github.com/fydy/fydy.github.io.git
-  master
 # Coding Pages
 - git push --force --quiet "https://deweke:${CO_TOKEN}@${CO_REF}" master:master
+# Gitlab Pages
+- git push --force --quiet "https://towit:${GI_TOKEN}@${GI_REF}" master:master
 
 env:
  global:
    # Coding Pages
    - CO_REF: git.coding.net/deweke/deweke.coding.me.git
+   # Gitlab Pages
+   - GI_REF: gitlab.com/towit/towit.gitlab.io.git
