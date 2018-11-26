@@ -1,0 +1,141 @@
+<p>#Animate.css
+<em>Just-add-water CSS animation</em></p>
+<p><code>animate.css</code> is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.</p>
+<p>##Basic Usage</p>
+<ol>
+<li><p>Include the stylesheet on your document’s <code>&lt;head&gt;</code></p>
+<pre><code class="html"><span class="tag">&lt;<span class="name">head</span>&gt;</span>
+ <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"animate.min.css"</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">head</span>&gt;</span>
+</code></pre>
+</li>
+<li><p>Add the class <code>animated</code> to the element you want to animate.
+You may also want to include the class <code>infinite</code> for an infinite loop.</p>
+</li>
+<li><p>Finally you need to add one of the following classes:</p>
+<ul>
+<li><code>bounce</code></li>
+<li><code>flash</code></li>
+<li><code>pulse</code></li>
+<li><code>rubberBand</code></li>
+<li><code>shake</code></li>
+<li><code>swing</code></li>
+<li><code>tada</code></li>
+<li><code>wobble</code></li>
+<li><code>jello</code></li>
+<li><code>bounceIn</code></li>
+<li><code>bounceInDown</code></li>
+<li><code>bounceInLeft</code></li>
+<li><code>bounceInRight</code></li>
+<li><code>bounceInUp</code></li>
+<li><code>bounceOut</code></li>
+<li><code>bounceOutDown</code></li>
+<li><code>bounceOutLeft</code></li>
+<li><code>bounceOutRight</code></li>
+<li><code>bounceOutUp</code></li>
+<li><code>fadeIn</code></li>
+<li><code>fadeInDown</code></li>
+<li><code>fadeInDownBig</code></li>
+<li><code>fadeInLeft</code></li>
+<li><code>fadeInLeftBig</code></li>
+<li><code>fadeInRight</code></li>
+<li><code>fadeInRightBig</code></li>
+<li><code>fadeInUp</code></li>
+<li><code>fadeInUpBig</code></li>
+<li><code>fadeOut</code></li>
+<li><code>fadeOutDown</code></li>
+<li><code>fadeOutDownBig</code></li>
+<li><code>fadeOutLeft</code></li>
+<li><code>fadeOutLeftBig</code></li>
+<li><code>fadeOutRight</code></li>
+<li><code>fadeOutRightBig</code></li>
+<li><code>fadeOutUp</code></li>
+<li><code>fadeOutUpBig</code></li>
+<li><code>flipInX</code></li>
+<li><code>flipInY</code></li>
+<li><code>flipOutX</code></li>
+<li><code>flipOutY</code></li>
+<li><code>lightSpeedIn</code></li>
+<li><code>lightSpeedOut</code></li>
+<li><code>rotateIn</code></li>
+<li><code>rotateInDownLeft</code></li>
+<li><code>rotateInDownRight</code></li>
+<li><code>rotateInUpLeft</code></li>
+<li><code>rotateInUpRight</code></li>
+<li><code>rotateOut</code></li>
+<li><code>rotateOutDownLeft</code></li>
+<li><code>rotateOutDownRight</code></li>
+<li><code>rotateOutUpLeft</code></li>
+<li><code>rotateOutUpRight</code></li>
+<li><code>hinge</code></li>
+<li><code>rollIn</code></li>
+<li><code>rollOut</code></li>
+<li><code>zoomIn</code></li>
+<li><code>zoomInDown</code></li>
+<li><code>zoomInLeft</code></li>
+<li><code>zoomInRight</code></li>
+<li><code>zoomInUp</code></li>
+<li><code>zoomOut</code></li>
+<li><code>zoomOutDown</code></li>
+<li><code>zoomOutLeft</code></li>
+<li><code>zoomOutRight</code></li>
+<li><code>zoomOutUp</code></li>
+<li><code>slideInDown</code></li>
+<li><code>slideInLeft</code></li>
+<li><code>slideInRight</code></li>
+<li><code>slideInUp</code></li>
+<li><code>slideOutDown</code></li>
+<li><code>slideOutLeft</code></li>
+<li><code>slideOutRight</code></li>
+<li><code>slideOutUp</code></li>
+</ul>
+</li>
+</ol>
+<p>Full example:</p>
+<pre><code class="html"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">"animated infinite bounce"</span>&gt;</span>Example<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>
+</code></pre>
+<p>##Usage
+To use animate.css in your website, simply drop the stylesheet into your document’s <code>&lt;head&gt;</code>, and add the class <code>animated</code> to an element, along with any of the animation names. That’s it! You’ve got a CSS animated element. Super!</p>
+<pre><code class="html"><span class="tag">&lt;<span class="name">head</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"animate.min.css"</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">head</span>&gt;</span>
+</code></pre>
+<p>You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:</p>
+<pre><code class="javascript">$(<span class="string">'#yourElement'</span>).addClass(<span class="string">'animated bounceOutLeft'</span>);
+</code></pre>
+<p>You can also detect when an animation ends:</p>
+<!--
+Before you make changes to this file, you should know that $('#yourElement').one() is *NOT A TYPO*
+
+http://api.jquery.com/one/
+-->
+<pre><code class="javascript">$(<span class="string">'#yourElement'</span>).one(<span class="string">'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'</span>, doSomething);
+</code></pre>
+<p><a href="https://www.youtube.com/watch?v=CBQGl6zokMs">View a video tutorial</a> on how to use Animate.css with jQuery here. </p>
+<p><strong>Note:</strong> <code>jQuery.one()</code> is used when you want to execute the event handler at most <em>once</em>. More information <a href="http://api.jquery.com/one/">here</a>.</p>
+<p>You can change the duration of your animations, add a delay or change the number of times that it plays:</p>
+<pre><code class="css"><span class="selector-id">#yourElement</span> {
+  <span class="attribute">-vendor-animation-duration</span>: <span class="number">3s</span>;
+  <span class="attribute">-vendor-animation-delay</span>: <span class="number">2s</span>;
+  <span class="attribute">-vendor-animation-iteration-count</span>: infinite;
+}
+</code></pre>
+<p><em>Note: be sure to replace “vendor” in the CSS with the applicable vendor prefixes (webkit, moz, etc)</em></p>
+<h2 id="Custom-Builds"><a href="#Custom-Builds" class="headerlink" title="Custom Builds"></a>Custom Builds</h2><p>Animate.css is powered by <a href="http://gruntjs.com">Grunt</a>, and you can create custom builds pretty easily. First of all, you’ll need Grunt and all other dependencies:</p>
+<pre><code class="sh">$ <span class="built_in">cd</span> path/to/animate.css/
+$ sudo npm install
+</code></pre>
+<p>Next, run <code>grunt watch</code> to watch for changes and compile your custom builds. For example, if you want only some of the the “attention seekers”, simply edit the <code>animate-config.json</code> file to select only the animations you want to use.</p>
+<pre><code class="javascript"><span class="string">"attention_seekers"</span>: {
+  <span class="string">"bounce"</span>: <span class="literal">true</span>,
+  <span class="string">"flash"</span>: <span class="literal">false</span>,
+  <span class="string">"pulse"</span>: <span class="literal">false</span>,
+  <span class="string">"shake"</span>: <span class="literal">true</span>,
+  <span class="string">"swing"</span>: <span class="literal">true</span>,
+  <span class="string">"tada"</span>: <span class="literal">true</span>,
+  <span class="string">"wobble"</span>: <span class="literal">true</span>,
+  <span class="string">"jello"</span>:<span class="literal">true</span>
+}
+</code></pre>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>Animate.css is licensed under the MIT license. (<a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a>)</p>
+<h2 id="Contributing"><a href="#Contributing" class="headerlink" title="Contributing"></a>Contributing</h2><p>Pull requests are the way to go here. I apologise in advance for the slow action on pull requests and issues. I only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a <a href="http://codepen.io">pen</a>. That last one is important.</p>
