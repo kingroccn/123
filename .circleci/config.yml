@@ -24,8 +24,8 @@ jobs:
       - run: git clone https://github.com/acyortjs/theme-donob.git themes/donob
       - run: acyort build
       - run: git checkout .
-      - run: git checkout gh-pages
-      - run: git reset --hard origin/gh-pages
+      - run: git checkout master
+      - run: git reset --hard origin/master
       - run: cp -R public/* .
       - run: rm config.bak.yml
       - run: rm -R scripts themes public
@@ -33,4 +33,4 @@ jobs:
       - run: git config user.name "fydy"
       - run: git config user.email "barberw@mail.lcc.edu"
       - run: git commit -m "Updated by circleci - `date`"
-      - run: git push -q https://${gh_token}@github.com/fydy/fydy.github.io.git gh-pages:gh-pages
+      - run: git push -q https://${gh_token}@github.com/fydy/fydy.github.io.git master:master
