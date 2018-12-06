@@ -1,7 +1,7 @@
-title: Recordum
-description: All about Recordum
+title: 无讼法苑
+description: 分享，极致！！！
 
-url: https://acyort.am0200.com
+url: https://fydy.github.io
 theme: donob
 
 per_page: 7
@@ -13,8 +13,8 @@ menu:
 
 default_category: blog
 
-user: LoeiFy
-repository: Recordum
+user: fydy
+repository: fydy.github.io
 
 plugins:
   - acyort-rss
@@ -24,7 +24,7 @@ plugins:
 public_dir: public
 
 authors:
-  - LoeiFy
+  - fydy
 
 timezone: Asia/Shanghai
 
@@ -34,7 +34,7 @@ line_numbers:
 
 order:
 
-token: 5#c21bffc137f44faf7e9c4a84da827f7cc2cfeaa
+token: 8#aff904696956cce9371882f55e448b9b3a2793b
 
 cache: true
 
