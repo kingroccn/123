@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - checkout
-      - run: npm install acyort -g
+      - run: npm i acyort@2.3 -g
       - run: acyort init
       - run: cp config.bak.yml config.yml
       - run: npm i
@@ -33,4 +33,4 @@ jobs:
       - run: git config user.name "LoeiFy"
       - run: git config user.email "LoeiFy@gmail.com"
       - run: git commit -m "Updated by circleci - `date`"
-      - run: git push -q https://${gh_token}@github.com/LoeiFy/Recordum.git gh-pages:gh-pages
+      - run: git push -q https://${gh_token}@github.com/fydy/fydy.github.io.git gh-pages:gh-pages
